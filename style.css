@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    /* dhakna er kaj sesh hole tahole just navbar porjonto black dhakna ta thakbe */
+    /* position: relative; */
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer;
+
+}
+.leftnav{
+    width: 70%;
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+.logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    height: 32px;
+    width: 32px;
+    border: 2px solid white;
+    border-radius: 55px;
+    
+
+}
+.leftnav li{
+    list-style: none;
+    padding: 26px 10px;
+
+}
+.leftnav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.leftnav li a:hover{
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    border: 2px;
+    border-radius: 8px;
+    
+}
+.rightnav{
+    width: 30%;
+    /* background-color: brown; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+#search{
+     padding: 5px 13px;
+     font-size: 17px;
+     border: 2px solid grey;
+     border-radius: 9px;
+     align-items: center;
+}
+/* black botder diye dhakbo tai before use korbo */
+.navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+}
+.home::before{
+    content:"";
+    background:url('/background.jpg') no-repeat center center/cover;
+    position:absolute; 
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    height: 420px;
+   
+}
+.home{
+    
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;  
+}
+.main{
+    padding-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.big-text{
+    font-size: 34px;
+}
+.small-text{
+    font-size: 20px;
+}
+.buttons{
+    padding-top: 10px;
+}
+.btn{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: red;
+}
+.btn:hover{
+    background-color: gray;
+}
+/* Services Section */
+.services{
+    /* margin: 34px; */
+    display: flex;
+}
+.services .box{ 
+    border: 2px solid black;
+    padding: 14px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    box-shadow: 15px 15px red;
+}
+
+.services .box img{ 
+   height: 160px;
+   /* center a img anar jonno  */
+   margin: auto;
+   display: block;
+}
+.services .box img:hover{
+    transform:.5s;
+    cursor: pointer;
+    border: 2px solid green;
+    transform: translateY(-30px);
+    box-shadow: 5px 5px green;
+
+    
+}
+
+.services .box p{
+    font-family: 'Bree Serif', serif;
+    padding-top: 10px;
+
+} 
+.services .box p:hover{
+    transform: scale(1.05);
+    color: black;
+}
+
+.primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+    padding-top: 120px;
+    text-align: center;
+   
+}
+.secondary{
+    padding-top: 10px;
+    border-bottom:2px solid black;
+    text-align: center;
+}
+
+.logo2 img{
+    height: 93px;
+    width: 93px;
+    /* border: 2px solid white; */
+    /* border-radius: 50px; */
+    padding-left: 12px;
+    padding-top: 30px;
+}
+.rightsection{
+    padding-top: 50px;
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+}
+.firstsection{
+    padding-left: 0px;
+    padding-top: 30px;
+}
+.leftsection{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 70%;
+    margin: auto;
+}
+.secondsection{
+    padding-left: 12px;
+    padding-top: 30px;
+}
+.logo3 img{
+    height: 93px;
+    width: 93px;
+    /* border: 2px solid white; */
+    /* border-radius: 50px; */
+    padding-left: 0px;
+    padding-top: 35px;
+ 
+}
+.logo2 img:hover{
+    transform: scale(1.1);
+     
+}
+.logo3 img:hover{
+     transform: scale(1.1); 
+    
+}
+.primary1{
+    font-family: 'Bree Serif', serif;
+    font-size: 34px;
+    color: white;
+    
+    
+}
+.para{
+    font-family: 'Bree Serif', serif;
+    font-size: 17px;
+    color: white; 
+}
+.section{
+    position: relative;
+    margin-top: 60px;
+}
+.section::before{
+    content:"";
+    background:url('/background.jpg') no-repeat center center/cover;
+    position:absolute; 
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    height: 490px;
+   
+}
+ /* form section  */
+
+.form{
+    max-width: 400px;
+    margin: 14px auto;
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding: 5px 13px;
+}
+
+/* footer design  */
+/* footer  */
+.section-footer{
+    display: flex;
+    padding: 10px 6px ;
+    margin: 10px 6px;
+    
+    color: white;
+           
+}
+.section-footer h2{
+    margin-bottom: 20px;
+}
+.About-Us{
+    width: 43%;
+    margin-bottom: 0px;
+    padding-left: 50px;
+}
+.quick-Links{
+    width: 23%;
+    text-decoration: none; 
+    padding-left: 40px;    
+}
+
+.list li {
+   list-style: none; 
+   font-size: 1.15rem; 
+   justify-content: center;
+   align-items: center;
+   text-align: left;
+
+}
+.list li a {
+   text-decoration: none;
+   color: white;     
+}
+.list li a:hover{
+   color: red;
+}
+.contacts{
+    width: 33%;
+    padding-right: 40px;
+}
+.About-Us .social button{
+   padding: 6px;
+   margin: 6px;
+   cursor: pointer;
+   background-color:white;
+   border: 2px solid grey;   
+   border-radius: 45px;
+}
+.About-Us .social button:hover{
+   background-color:rgb(176, 233, 233);
+   border: 2px solid black ;
+   transform: scale(1.1);   
+}
+.list-1 li{
+   list-style: none;
+   font-size: 1.15rem;
+}
+.copyright{
+   text-align: center;
+   height: 40px;
+   font-size: 1.05rem;
+   color:white;
+}
+.section-footer::before{
+   content:"";
+   background-color: black;
+   position: absolute;
+   height: 40%;
+   width: 100%;
+   z-index:-1;
+   opacity: 0.8;
+
+}
+hr{
+   width: 90%;
+   border: 0;
+   border-bottom: 1px solid white;
+   color: white;
+   margin: 20px auto;
+} 
+
+
+
+
+
+
+
+
+  
+   
+
+    

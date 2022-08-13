@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+.services{
+    flex-direction: column;
+    padding: 20px 30px;
+}
+.services .box img{
+    width: 160px;
+}
+
+.form{
+    max-width: 250px;
+    margin: auto;
+}
